@@ -11,7 +11,7 @@ f= "abc" #we are re-declaring it again with this line.
 print(f)
 
 # ERROR: variables of different types cannot be combined
-
+print("this is a string" + 123) # in JavaScript this works, because JS does adds two different types, Python does not. This brings a TypeError: cannot concatenate 'str' and 'int' objects
 
 
 # Global vs. local variables in functions
