@@ -15,5 +15,10 @@ print("this is a string" + 123) # in JavaScript this works, because JS does adds
 print("this is a string" + str(123)) # the str() function changes anything to a string. 
 
 # Global vs. local variables in functions
+g= 0 #wrote a variable.
+def someFunction() : #wrote a function that has the same local variable. 
+    g="def"
+    print(g)
 
-
+someFunction() #here we call the function to execute
+print(g) #here we print what ever g is
