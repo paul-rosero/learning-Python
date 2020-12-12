@@ -3,8 +3,8 @@
 #
 
 # Declare a variable and initialize it
-
-
+f=0 #creating a variable named "f" and setting equal to 0
+print(f) #printing this variable.
 
 # re-declaring the variable works
 
