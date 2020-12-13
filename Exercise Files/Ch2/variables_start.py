@@ -18,7 +18,8 @@ print("this is a string" + str(123)) # the str() function changes anything to a 
 # Global vs. local variables in functions
 g= "im outside someFunction" #wrote a variable.
 def someFunction() : #wrote a function that has the same local variable. 
-    g="someFunction variable g" #this a local variable inside the function.
+    global g #creating a global variable 
+    g="someFunction's local variable g" #this a local variable inside the function.
     print(g)
 
 someFunction() #here we call the function to execute
