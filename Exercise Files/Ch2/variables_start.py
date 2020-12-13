@@ -19,6 +19,7 @@ print("this is a string" + str(123)) # the str() function changes anything to a 
 g= "im outside someFunction" #wrote a variable.
 def someFunction() : #wrote a function that has the same local variable. 
     global g #creating a global variable 
+             #once this was created it affected the g variable outside the function, it ignored it.  
     g="someFunction's local variable g" #this a local variable inside the function.
     print(g)
 
