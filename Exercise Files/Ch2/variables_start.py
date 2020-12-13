@@ -11,13 +11,14 @@ f= "abc" #we are re-declaring it again with this line.
 print(f)
 
 # ERROR: variables of different types cannot be combined
-print("this is a string" + 123) # in JavaScript this works, because JS does adds two different types, Python does not. This brings a TypeError: cannot concatenate 'str' and 'int' objects
+#print("this is a string" + 123) 
+        # in JavaScript this works, because JS does adds two different types, Python does not. This brings a TypeError: cannot concatenate 'str' and 'int' objects
 print("this is a string" + str(123)) # the str() function changes anything to a string. 
 
 # Global vs. local variables in functions
-g= 0 #wrote a variable.
+g= "im outside someFunction" #wrote a variable.
 def someFunction() : #wrote a function that has the same local variable. 
-    g="def"
+    g="someFunction variable g" #this a local variable inside the function.
     print(g)
 
 someFunction() #here we call the function to execute
