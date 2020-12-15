@@ -25,3 +25,7 @@ def someFunction() : #wrote a function that has the same local variable.
 
 someFunction() #here we call the function to execute
 print(g) #here we print what ever g is
+
+del g #the word "del" deletes the definition of a variable that was previously declared
+      #you can undefine variables in real time by using the del statement.
+print(g)
