@@ -11,8 +11,9 @@ def main():
   #   x = x + 1
 
   # define a for loop; these are iterators
-  for x in range(5,10):
-    print(x)
+  # the range function will start with that 5 and iterate till but not including 10.
+  # for x in range(5,10):
+  #   print(x)
 
   # use a for loop over a collection
 
