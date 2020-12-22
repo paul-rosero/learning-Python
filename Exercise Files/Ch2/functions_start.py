@@ -32,12 +32,12 @@ def cube(x):
 # function with default value for an argument
 def power(num, x = 1):
     result = 1
-    for i in range(x):
+    for i in range(x): #we will talk about loops later in the course.
         result = result * num 
     return result
-print(power(2))
-print(power(2,3))
-print(power(x=3, num=2))
+print(power(2)) #since we call default value of x=1 so it works normal.
+print(power(2,3)) #we override the default value of x when supplied with second argument.
+print(power(x=3, num=2)) # python3 lets you call functions with their named parameters along with their values, python interpreter figures out which argument to supply the values to, we don't have the call the function the arg in a particular order if you simply supply the names along with the values
 
 #function with variable number of arguments
 
