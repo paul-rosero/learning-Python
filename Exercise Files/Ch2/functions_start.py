@@ -28,8 +28,16 @@ def cube(x):
 #cube(3)            # does not print anything since it returns a value. so nothing shows but everything is working as it should 
 
 #print(cube(3))            # this has a return a value, so that is what gets printed. since this has a return value. 
-# function with default value for an argument
 
+# function with default value for an argument
+def power(num, x = 1):
+    result = 1
+    for i in range(x):
+        result = result * num 
+    return result
+print(power(2))
+print(power(2,3))
+print(power(x=3, num=2))
 
 #function with variable number of arguments
 
