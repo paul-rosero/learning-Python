@@ -17,17 +17,17 @@ def func1():            # the, : ,is scope definer
 def func2(arg1, arg2):
     print(arg1, " ", arg2)
 
-func2(10,20)            # returns or prints "10 20" only since thats what is what the function does.
+#func2(10,20)            # returns or prints "10 20" only since thats what is what the function does.
 
-print(func2(10,20))            # prints  "10 20" first since thats what the func1 does, the the outer print() executes and since the func1 does not return a value, python evaluates the return value to be the constant of none and prints the string representation of none.
+#print(func2(10,20))            # prints  "10 20" first since thats what the func1 does, the the outer print() executes and since the func1 does not return a value, python evaluates the return value to be the constant of none and prints the string representation of none.
 
 # function that returns a value
 def cube(x):
     return x * x * x
 
-cube(3)            # does not print anything since it returns a value. so nothing shows but everything is working as it should 
+#cube(3)            # does not print anything since it returns a value. so nothing shows but everything is working as it should 
 
-print(cube(3))            # this has a return a value, so that is what gets printed. since this has a return value. 
+#print(cube(3))            # this has a return a value, so that is what gets printed. since this has a return value. 
 # function with default value for an argument
 
 
