@@ -42,5 +42,12 @@ def power(num, x = 1):
 #print(power(x=3, num=2))            # python3 lets you call functions with their named parameters along with their values, python interpreter figures out which argument to supply the values to, we don't have the call the function the arg in a particular order if you simply supply the names along with the values
 
 #function with variable number of arguments
+def multi_add(*args): # the '*' means i can pass in a variable number of arguments.
+    result = 0
+    for x in args:
+        result = result + x
+    return result
 
+print(multi_add(3, 5, 6, 7))            #prints out 21 because it adds all these 
 
+print(multi_add(13, 3, 5, 6, 7))            # prints out 34 since i added the 13, but did not have to change my function because it has the asterisk '*' in function arguments.
